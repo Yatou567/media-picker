@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "拾光 · 网页资源下载",
+  "version": "1.0.0",
+  "description": "罗列当前网页的图片、视频、音频，支持分类搜索、批量下载和点选元素下载。",
+  "minimum_chrome_version": "102",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "拾光 · 网页资源下载", "default_popup": "popup.html"},
+  "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"}
+}

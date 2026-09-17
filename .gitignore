@@ -1,0 +1,21 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local artifacts
+.DS_Store
+Thumbs.db
+node_modules/
+coverage/
+*.log
+*.zip
+*.crx
+work/
+chrome-test/
+playwright-report/
+test-results/

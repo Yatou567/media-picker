@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拾光 · 网页资源下载</title><link rel="stylesheet" href="popup.css"></head><body>
+<header><div class="brand"><span class="logo">↙</span><div><h1>拾光 <span>MEDIA PICKER</span></h1><p id="pageTitle">收集网页里的灵感与资源</p></div></div><span class="local">本地运行</span></header>
+<main><section class="hero"><div><span class="eyebrow">YOUR WEB, COLLECTED</span><h2>网页里的好内容，一处收好。</h2><p>发现图片、视频与音频，轻松保存到电脑。</p></div><button id="pick" class="primary">⌖ 点选元素</button></section>
+<div class="tools"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索文件名、链接或描述" aria-label="搜索资源"></label><button id="refresh" title="重新扫描页面">↻ 刷新</button></div>
+<nav aria-label="资源类型"><button class="active" data-filter="all">全部 <span>0</span></button><button data-filter="image">图片 <span>0</span></button><button data-filter="video">视频 <span>0</span></button><button data-filter="audio">音频 <span>0</span></button></nav>
+<div class="list-heading"><label><input type="checkbox" id="all"> 全选当前结果</label><span id="count">正在扫描…</span></div>
+<div id="list" aria-label="资源列表"><div class="empty">正在发现页面中的资源…</div></div>
+<p class="notice" id="coverage">仅显示已发现资源；可先滚动页面或播放媒体，再点击刷新。</p>
+<p id="status" role="status" aria-live="polite"></p>
+</main><footer><div><strong id="selected">已选 0 项</strong><small>在 Chrome 下载记录中查看进度</small></div><button id="batch" class="primary" disabled>↓ 下载所选</button></footer>
+<script src="popup.js"></script></body></html>
